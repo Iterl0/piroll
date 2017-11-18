@@ -60,9 +60,12 @@
     border-color: transparent;
 }
 
-.header .navbar-nav li a {
+.header .navbar-nav li a, .items .row:last-child [class*="col-"] {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+}
+
+.header .navbar-nav li a {
     color: #191919;
 }
 
@@ -79,10 +82,6 @@
     .header .navbar-nav li a {
         font-size: small;
     }
-}
-
-.banner .jumbotron, .about .jumbotron {
-    background-color: transparent;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
     .banner-bg .jumbotron {
@@ -122,7 +121,11 @@ p.lead {
     border: none;
 }
 
-.about .jumbotron .display-3, .skills h1 {
+.jumbotron {
+    background-color: transparent;
+}
+
+.jumbotron .display-3, .skills h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -257,18 +260,14 @@ p.lead {
     width: 100%;
 }
 
-.text {
-    white-space: nowrap;
-    color: white;
-    font-size: 20px;
-    position: absolute;
-    overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
 .items [class*="col-"]:hover {
     filter: brightness(80%);
 }
+
+.items .row:last-child [class*="col-"] {
+    background-color: #f5f5f5;
+    color: #969696;
+    text-align: center;
+    padding: 2em;
+    text-transform: uppercase;
+} 
