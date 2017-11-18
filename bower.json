@@ -16,7 +16,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "pixeden-stroke-7-icon": "git://github.com/olimsaidov/pixeden-stroke-7-icon.git#^1.2.3"
+    "pixeden-stroke-7-icon": "git://github.com/olimsaidov/pixeden-stroke-7-icon.git#^1.2.3",
+    "css-hamburgers": "^0.9.1"
   },
   "devDependencies": {}
 }

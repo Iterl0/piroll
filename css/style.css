@@ -73,6 +73,10 @@
     z-index: 1000;
 }
 
+.navbar-header .hamburger {
+    padding: 20px 55px 15px 0;
+}
+
 .navbar-collapse.collapsing, .navbar-collapse.in {
     background-color: #c8c8c8c9;
     position: inherit;
