@@ -1,0 +1,230 @@
+.banner-bg {
+    background-image: url(../assets/img/banner_bg.jpg);
+    -webkit-background-size: 100%;
+    background-size: 100%;
+    height: 40vh;
+}
+
+.skills [class*="col-"]:first-of-type {
+    padding: 10em 5em 2em;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-bg {
+        height: 60vh;
+    }
+}
+@media (min-width: 1024px) {
+    .banner-bg {
+        height: 60vh;
+    }
+    .skills [class*="col-"]:first-of-type {
+        padding: 10em 10em 2em;
+    }
+}
+@media (min-width: 1200px) {
+    .banner {
+        margin: 6em 0 0 0;
+    }
+}
+@media (min-width: 1200px) {
+    .banner-bg {
+        height: 100vh;
+    }
+    .banner {
+        margin: 6em 0 0 0;
+    }
+}
+
+.navbar-brand {
+    padding: 5px 0 0 15px;
+}
+
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.header .navbar-nav li a:hover,
+.header .navbar-nav li a:focus,
+.header .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #10c9c3;
+    border-color: transparent;
+}
+
+.header .navbar {
+    margin-top: 20px;
+    background: transparent;
+    border-color: transparent;
+}
+
+.header .navbar-nav li a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #191919;
+}
+
+.navbar-collapse {
+    z-index: 1000;
+}
+
+.navbar-collapse.collapsing, .navbar-collapse.in {
+    background-color: #c8c8c8c9;
+    position: inherit;
+}
+
+@media (max-width: 991px) {
+    .header .navbar-nav li a {
+        font-size: small;
+    }
+}
+
+.banner .jumbotron, .about .jumbotron {
+    background-color: transparent;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .banner-bg .jumbotron {
+        background-color: #c4c3c7d4;
+        float: right;
+    }
+}
+
+.banner .display-3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+p.lead {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+.lead a, .numbers {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.lead a {
+    padding: 15px 3em;
+}
+
+.lead .btn {
+    background-color: #10c9c3;
+    border: none;
+}
+
+.about .jumbotron .display-3, .skills h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.about .lead {
+    margin: 2em 0 0 0;
+}
+
+.skills {
+    background-color: #f9f9f9;
+}
+
+.skills [class*="col-"], .items [class*="col-"] {
+    padding: 0;
+}
+
+.skills [class*="col-"]:last-of-type {
+    overflow: hidden;
+}
+
+.skills .progress {
+    background-color: #d8d8d8;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    height: 5px;
+}
+
+.skills .progress-bar {
+    background-color: #10c9c3;
+}
+
+@media (min-width: 1200px) {
+    .skills img {
+        width: 100%;
+    }
+}
+
+.skills p {
+    padding-top: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.numbers {
+    background-color: #10c9c3;
+    padding: 5em 0;
+}
+
+/*@media (min-width: 1024px) {*/
+    /*.numbers {*/
+        /*background-color: #10c9c3;*/
+        /*padding: 50px;*/
+    /*}*/
+/*}*/
+/*@media (min-width: 1200px) {*/
+    /*.numbers {*/
+        /*background-color: #10c9c3;*/
+        /*padding: 80px;*/
+    /*}*/
+/*}*/
+
+.numbers .row .row [class*="col-"]:nth-child(2) {
+    font-size: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .numbers .row {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .numbers .container > .row > [class*="col-"] {
+        margin: 0 0 2em;
+    }
+}
+
+@media (min-width: 768px) {
+    .items [class*="col-"]:nth-child(8n+2),
+    .items [class*="col-"]:nth-child(8n+4),
+    .items [class*="col-"]:nth-child(8n+5),
+    .items [class*="col-"]:nth-child(8n+7){
+        filter: brightness(90%);
+    }
+}
+
+.items [class*="col-"]:nth-child(even) {
+    background-color: #fefefe;
+}
+
+@media (max-width: 767px) {
+    .items img{
+        float: none;
+        margin: 0 auto;
+    }
+    .items [class*="col-"]:nth-child(even) {
+        filter: brightness(90%);
+    }
+}
+
