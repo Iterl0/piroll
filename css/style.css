@@ -205,6 +205,10 @@ p.lead {
     }
 }
 
+.items [class*="col-"] {
+    transition:all 0.3s ease;
+}
+
 @media (min-width: 768px) {
     .items [class*="col-"]:nth-child(8n+2),
     .items [class*="col-"]:nth-child(8n+4),
@@ -215,7 +219,11 @@ p.lead {
 }
 
 .items [class*="col-"]:nth-child(even) {
-    background-color: #fefefe;
+    background-color: #fff;
+}
+
+.items [class*="col-"]:nth-child(odd) {
+    background-color: #fff;
 }
 
 @media (max-width: 767px) {
@@ -228,3 +236,39 @@ p.lead {
     }
 }
 
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0c8984;
+    opacity: 0.5;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    -webkit-mask-image: url(../bower_components/pixeden-stroke-7-icon/pe-icon-7-stroke/svg/look.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 9em;
+    -webkit-mask-position: center;
+}
+
+.items [class*="col-"]:hover .overlay {
+    width: 100%;
+}
+
+.text {
+    white-space: nowrap;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.items [class*="col-"]:hover {
+    filter: brightness(80%);
+}
